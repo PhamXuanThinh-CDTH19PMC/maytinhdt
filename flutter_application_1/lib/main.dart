@@ -26,37 +26,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String equation = "0";
-  String result = "0";
-  String expression = "";
-  double equationFontSize = 38.0;
-  double resultFontSize = 48.0;
-  buttonPressed(String buttonText) {
-    setState(() {});
-  }
+ 
 
   Widget buildButton(
       String buttonText, double buttonHeight, Color buttonColor) {
-    return Container(
-      height: MediaQuery.of(context).size.height * 0.1 * buttonHeight,
-      color: buttonColor,
-      child: FlatButton(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(0.0),
-            side: BorderSide(
-                color: Colors.white, width: 1, style: BorderStyle.solid),
-          ),
-          padding: EdgeInsets.all(16.0),
-          onPressed: () => buttonPressed(buttonText),
-          child: Text(
-            buttonText,
-            style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.normal,
-                color: Colors.white),
-          )),
-    );
-  }
+    return 
 
   @override
   Widget build(BuildContext context) {
